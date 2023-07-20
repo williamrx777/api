@@ -38,7 +38,14 @@ public class ApiApplication {
 			mario.setDescription("Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.");
 			mario.setImage("https://www.ucicinemas.com.br/Content/Upload/Filmes/Posters/10812/filme_10812.jpg");
 			mario.setUrl("https://mega.nz/embed/7LYUAIgL#upVl3Cy8Qby5VmWBnz0JZtD4uJne5oK376rAp79XBz8");
-			filmesRepository.saveAll(Arrays.asList(equals,her,mario));
+
+			Filmes equilibrium = new Filmes();
+			equilibrium.setTitle("Equilibrium");
+			equilibrium.setDescription("Em um futuro incerto, a raça humana foi quase totalmente devastada. Para salvar o mundo, os governantes decidiram criar uma droga capaz de inibir o sentimento humano e garantir a paz para sempre. Em nome dessa sociedade perfeita, tudo o que pudesse provocar qualquer sentimento foi destruído: livros, arte, música. Mas um grupo se nega a tomar a droga, e agora a cidade está cercada de sacerdotes da lei, que vieram para exterminar esses rebeldes.");
+			equilibrium.setImage("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtCExNjVDgMQ9EbCWVERCeBAwA-ohQZarC2mER1I484zlavXYn");
+			equilibrium.setUrl("https://mega.nz/embed/aZ1QhADJ#NsaUNpDuXBA-6OAyCDjMnDlzEJiXWJU3Z-JknvgVqvU");
+
+			filmesRepository.saveAll(Arrays.asList(equals,her,mario,equilibrium));
 		};
 	}
 
