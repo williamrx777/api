@@ -1,7 +1,7 @@
-package com.will.api.Service;
+package com.will.api.api.Service;
 
-import com.will.api.Entity.Serie;
-import com.will.api.Repositories.SerieRepository;
+import com.will.api.api.Entity.Serie;
+import com.will.api.api.Repositories.SerieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

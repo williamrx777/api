@@ -1,4 +1,4 @@
-package com.will.api;
+package com.will.api.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

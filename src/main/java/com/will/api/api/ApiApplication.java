@@ -1,9 +1,9 @@
-package com.will.api;
+package com.will.api.api;
 
-import com.will.api.Entity.Filmes;
-import com.will.api.Repositories.AnimesRepository;
-import com.will.api.Repositories.FilmesRepository;
-import com.will.api.Repositories.SerieRepository;
+import com.will.api.api.Entity.Filmes;
+import com.will.api.api.Repositories.AnimesRepository;
+import com.will.api.api.Repositories.FilmesRepository;
+import com.will.api.api.Repositories.SerieRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

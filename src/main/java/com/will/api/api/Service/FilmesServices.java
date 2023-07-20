@@ -1,8 +1,7 @@
-package com.will.api.Service;
+package com.will.api.api.Service;
 
-import com.will.api.Dto.FilmesDTO;
-import com.will.api.Entity.Filmes;
-import com.will.api.Repositories.FilmesRepository;
+import com.will.api.api.Entity.Filmes;
+import com.will.api.api.Repositories.FilmesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

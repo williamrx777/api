@@ -1,11 +1,8 @@
-package com.will.api.Controller;
+package com.will.api.api.Controller;
 
-import com.will.api.Dto.AnimesDTO;
-import com.will.api.Dto.FilmesDTO;
-import com.will.api.Entity.Animes;
-import com.will.api.Entity.Filmes;
-import com.will.api.Service.AnimesServices;
-import com.will.api.Service.FilmesServices;
+import com.will.api.api.Dto.AnimesDTO;
+import com.will.api.api.Entity.Animes;
+import com.will.api.api.Service.AnimesServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

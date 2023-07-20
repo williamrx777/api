@@ -1,6 +1,6 @@
-package com.will.api.Dto;
+package com.will.api.api.Dto;
 
-import com.will.api.Entity.Filmes;
+import com.will.api.api.Entity.Filmes;
 
 public class FilmesDTO {
 

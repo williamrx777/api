@@ -1,25 +1,26 @@
-package com.will.api.Dto;
+package com.will.api.api.Dto;
 
-import com.will.api.Entity.Animes;
-import com.will.api.Entity.Filmes;
+import com.will.api.api.Entity.Serie;
 
-public class AnimesDTO {
+public class SerieDTO {
 
     private String title;
+
     private String description;
+
     private String image;
+
     private String url;
 
-    public AnimesDTO() {
+    public SerieDTO() {
     }
 
-    public AnimesDTO(String title, String description, String image, String url) {
+    public SerieDTO(String title, String description, String image, String url) {
         this.title = title;
         this.description = description;
         this.image = image;
         this.url = url;
     }
-
 
     public String getTitle() {
         return title;
@@ -53,29 +54,28 @@ public class AnimesDTO {
         this.url = url;
     }
 
-    public static AnimesDTO toAnimesDto(Animes animes){
-        AnimesDTO animesDTO = new AnimesDTO();
-
-        animesDTO.setTitle(animes.getTitle());
-        animesDTO.setDescription(animes.getDescription());
-        animesDTO.setImage(animes.getImage());
-        animesDTO.setUrl(animes.getUrl());
-        return animesDTO;
+    public static SerieDTO toSerieDTO(Serie serie){
+        SerieDTO serieDTO = new SerieDTO();
+        serieDTO.setTitle(serie.getTitle());
+        serieDTO.setDescription(serie.getDescription());
+        serieDTO.setImage(serie.getImage());
+        serieDTO.setUrl(serie.getUrl());
+        return serieDTO;
     }
 
-    public static Animes toAnimesEntity(AnimesDTO animesDTO){
-        Animes animes = new Animes();
-
-        animes.setTitle(animesDTO.getTitle());
-        animes.setDescription(animesDTO.getDescription());
-        animes.setImage(animesDTO.getImage());
-        animes.setUrl(animesDTO.getUrl());
-        return animes;
+    public static Serie toSerieEntity(SerieDTO serieDTO){
+        Serie serie = new Serie();
+        serie.setTitle(serieDTO.getTitle());
+        serie.setDescription(serieDTO.getDescription());
+        serie.setImage(serieDTO.getImage());
+        serie.setUrl(serieDTO.getUrl());
+        return serie;
     }
+
 
     @Override
     public String toString() {
-        return "AnimesDTO{" +
+        return "SerieDTO{" +
                 "title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", image='" + image + '\'' +

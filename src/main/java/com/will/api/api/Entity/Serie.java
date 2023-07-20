@@ -1,13 +1,13 @@
-package com.will.api.Entity;
+package com.will.api.api.Entity;
 
 import jakarta.persistence.*;
 
 import java.util.Objects;
 
 @Entity
-@Table(name = "filmes")
-public class Filmes {
-    
+@Table(name = "serie")
+public class Serie {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,10 +19,10 @@ public class Filmes {
     @Column(columnDefinition = "TEXT")
     private String url;
 
-    public Filmes() {
+    public Serie() {
     }
 
-    public Filmes(Long id, String title, String description, String image, String url) {
+    public Serie(Long id, String title, String description, String image, String url) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -74,8 +74,8 @@ public class Filmes {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Filmes filmes = (Filmes) o;
-        return Objects.equals(id, filmes.id);
+        Serie serie = (Serie) o;
+        return Objects.equals(id, serie.id);
     }
 
     @Override

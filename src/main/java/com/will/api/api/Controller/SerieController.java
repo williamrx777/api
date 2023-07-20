@@ -1,8 +1,8 @@
-package com.will.api.Controller;
+package com.will.api.api.Controller;
 
-import com.will.api.Dto.SerieDTO;
-import com.will.api.Entity.Serie;
-import com.will.api.Service.SerieService;
+import com.will.api.api.Dto.SerieDTO;
+import com.will.api.api.Entity.Serie;
+import com.will.api.api.Service.SerieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 
